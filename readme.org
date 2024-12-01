@@ -140,37 +140,37 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Media
 
 #+NAME: media-r
-| RGB_TOG | RGB_MOD  | RGB_HUI  | RGB_SAI  | RGB_VAI  |
-| EP_TOG  | MPRV     | VOLD     | VOLU     | MNXT     |
-| OUT_TOG | BT_SEL_0 | BT_SEL_1 | BT_SEL_2 | BT_SEL_3 |
-| MSTP    | MPLY     | MUTE     | U_NP     | U_NP     |
+| BOOT   | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) | U_NA    |
+| MUTE   | VOLD      | VOLU        | F14        | F15     |
+| U_NU   | U_NU      | U_NU        | U_NU       | U_NU    |
+| MPRV   | MPLY      | MNXT        | U_NP       | U_NP    |
 
 
 *** Num
 
 #+NAME: num-l
-| [    | 7    | 8    | 9    | ]    |
-| ;    | 4    | 5    | 6    | =    |
-| `    | 1    | 2    | 3    | \    |
-| U_NP | U_NP | DOT  | 0    | MINS |
+| U_NP | 7    | 8    | 9    | U_NP |
+| ;    | 1    | 2    | 3    | =    |
+| U_NP | 4    | 5    | 6    | U_NP |
+| U_NP | U_NP | `    | 0    | MINS |
 
 
 *** Sym
 
 #+NAME: sym-l
-| {    | &    | *    | (    | }    |
-| :    | $    | %    | ^    | +    |
-| ~    | !    | @    | #    | PIPE |
-| U_NP | U_NP | (    | )    | _    |
+| U_NP | AT   | HASH | DLR  | U_NP |
+| [    | ]    | LPRN | RPRN | BSLS |
+| PERC | CIRC | AMPR | ASTR | U_NP |
+| U_NP | U_NP | EXLM | COLN | U_NP |
 
 
 *** Fun
 
 #+NAME: fun-l
-| F12  | F7   | F8   | F9   | PSCR |
-| F11  | F4   | F5   | F6   | SLCK |
-| F10  | F1   | F2   | F3   | PAUS |
-| U_NP | U_NP | APP  | SPC  | TAB  |
+| APP  | F7   | F8   | F9   | PSCR |
+| F11  | F1   | F2   | F3   | SLCK |
+| F10  | F4   | F5   | F6   | PAUS |
+| U_NP | U_NP | F12  | SPC  | TAB  |
 
 
 *** Alternative Layouts
@@ -2642,6 +2642,6 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #endif
 #+END_SRC
 
-** 
+**
 
 [[https://github.com/manna-harbour][https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/manna-harbour-boa-32.png]]
