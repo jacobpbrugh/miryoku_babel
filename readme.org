@@ -102,7 +102,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 **** Hold
 
 #+NAME: hold
-| BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |       | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
+| BOOT     | U_NA      | U_NA        | U_NA       |         |       | U_NA       | U_NA        | U_NA      | BOOT     |
 | LGUI     | LALT      | LCTL        | LSFT       |         |       | LSFT       | LCTL        | LALT      | LGUI     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
 | U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
@@ -140,7 +140,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Media
 
 #+NAME: media-r
-| BOOT   | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) | U_NA    |
+| BOOT   | U_NA      | U_NA        | U_NA       | U_NA    |
 | MUTE   | VOLD      | VOLU        | F14        | F15     |
 | U_NU   | U_NU      | U_NU        | U_NU       | U_NU    |
 | MPRV   | MPLY      | MNXT        | U_NP       | U_NP    |
