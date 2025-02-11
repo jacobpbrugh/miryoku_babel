@@ -59,7 +59,7 @@ jobs:
           git diff --exit-code
       - name: Archive Artifacts
         if: ${{ matrix.mode == 'build' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 'miryoku_babel'
           path: tangled
