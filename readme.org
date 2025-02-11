@@ -104,7 +104,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: hold
 | BOOT     | U_NA      | U_NA        | U_NA       |         |       | U_NA       | U_NA        | U_NA      | BOOT     |
 | LGUI     | LALT      | LCTL        | LSFT       |         |       | LSFT       | LCTL        | LALT      | LGUI     |
-| U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
+| U_BUTTON | ALGR      | U_NA        | U_NA       |         |       | U_NA       | U_NA        | ALGR      | U_BUTTON |
 | U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
 
@@ -357,7 +357,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 #+NAME: hold-flip
 | BOOT     | U_NA      | U_NA        | U_NA       |       |         | U_NA       | U_NA        | U_NA      | BOOT     |
 | LGUI     | LALT      | LCTL        | LSFT       |       |         | LSFT       | LCTL        | LALT      | LGUI     |
-| U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |       |         | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
+| U_BUTTON | ALGR      | U_NA        | U_NA       |       |         | U_NA       | U_NA        | ALGR      | U_BUTTON |
 | U_NP     | U_NP      | U_FUN       | U_NUM      | U_SYM | U_MOUSE | U_NAV      | U_MEDIA     | U_NP      | U_NP     |
 
 
