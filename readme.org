@@ -112,7 +112,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 #+NAME: nav-r
 | U_RDO  | U_PST | U_CPY | U_CUT | U_UND |
-| CPSWRD | LEFT  | DOWN  | UP    | RGHT  |
+| CAPS   | LEFT  | DOWN  | UP    | RGHT  |
 | INS    | HOME  | PGDN  | PGUP  | END   |
 | ENT    | BSPC  | DEL   | U_NP  | U_NP  |
 
@@ -283,7 +283,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: nav-r-vi
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND  |
-| LEFT  | DOWN  | UP    | RGHT  | CPSWRD |
+| LEFT  | DOWN  | UP    | RGHT  | CAPS   |
 | HOME  | PGDN  | PGUP  | END   | INS    |
 | ENT   | BSPC  | DEL   | U_NP  | U_NP   |
 
@@ -315,7 +315,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: nav-r-invertedt
 | INS    | HOME  | UP    | END   | PGUP  |
-| CPSWRD | LEFT  | DOWN  | RGHT  | PGDN  |
+| CAPS   | LEFT  | DOWN  | RGHT  | PGDN  |
 | U_RDO  | U_PST | U_CPY | U_CUT | U_UND |
 | ENT    | BSPC  | DEL   | U_NP  | U_NP  |
 
@@ -398,7 +398,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: nav-l
 | HOME  | PGDN  | PGUP  | END   | INS    |
-| LEFT  | DOWN  | UP    | RGHT  | CPSWRD |
+| LEFT  | DOWN  | UP    | RGHT  | CAPS   |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO  |
 | U_NP  | U_NP  | DEL   | BSPC  | ENT    |
 
@@ -430,7 +430,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: nav-l-invertedt
 | PGUP  | HOME  | UP    | END   | INS    |
-| PGDN  | LEFT  | DOWN  | RGHT  | CPSWRD |
+| PGDN  | LEFT  | DOWN  | RGHT  | CAPS   |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO  |
 | U_NP  | U_NP  | DEL   | BSPC  | ENT    |
 
