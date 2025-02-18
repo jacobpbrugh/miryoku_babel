@@ -140,10 +140,10 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Media
 
 #+NAME: media-r
-| BOOT   | U_NA      | U_NA        | U_NA       | U_NA    |
-| MUTE   | VOLD      | VOLU        | F14        | F15     |
-| U_NU   | U_NU      | U_NU        | U_NU       | U_NU    |
-| MPRV   | MPLY      | MNXT        | U_NP       | U_NP    |
+| RGB_TOG | RGB_MOD  | RGB_HUI  | RGB_SAI  | RGB_VAI  |
+| MUTE    | VOLD     | VOLU     | F14      | F15      |
+| U_NU    | BT_SEL_0 | BT_SEL_1 | BT_SEL_2 | BT_SEL_3 |
+| MPRV    | MPLY     | MNXT     | U_NP     | U_NP     |
 
 
 *** Num
