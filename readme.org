@@ -104,7 +104,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: hold
 | BOOT     | U_NA      | U_NA        | U_NA       |         |       | U_NA       | U_NA        | U_NA      | BOOT     |
 | LGUI     | LALT      | LCTL        | LSFT       |         |       | LSFT       | LCTL        | LALT      | LGUI     |
-| U_BUTTON | ALGR      | U_NA        | U_NA       |         |       | U_NA       | U_NA        | ALGR      | U_BUTTON |
+| U_NA     | U_NA      | U_NA        | U_NA       |         |       | U_NA       | U_NA        | U_NA      | U_NA     |
 | U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
 
@@ -149,19 +149,19 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Num
 
 #+NAME: num-l
-| U_NP | 7    | 8    | 9    | U_NP |
+| U_NA | 7    | 8    | 9    | U_NA |
 | ;    | 1    | 2    | 3    | =    |
-| U_NP | 4    | 5    | 6    | U_NP |
+| U_NA | 4    | 5    | 6    | U_NA |
 | U_NP | U_NP | `    | 0    | MINS |
 
 
 *** Sym
 
 #+NAME: sym-l
-| U_NP | AT   | HASH | DLR  | U_NP |
+| U_NA | AT   | HASH | DLR  | U_NA |
 | [    | ]    | LPRN | RPRN | BSLS |
-| PERC | CIRC | AMPR | ASTR | U_NP |
-| U_NP | U_NP | EXLM | COLN | U_NP |
+| PERC | CIRC | AMPR | ASTR | U_NA |
+| U_NP | U_NP | EXLM | COLN | U_NA |
 
 
 *** Fun
