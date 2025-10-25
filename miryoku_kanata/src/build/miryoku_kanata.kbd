@@ -1,0 +1,26 @@
+(defcfg
+  process-unmapped-keys yes
+  danger-enable-cmd no
+  sequence-timeout 2000
+  sequence-input-mode visible-backspaced
+  sequence-backtrack-modcancel no
+  log-layer-changes no
+  delegate-to-first-layer yes
+  movemouse-inherit-accel-state yes
+  movemouse-smooth-diagonals yes
+  1 -dev /dev/input/by-path/platform-i8042-serio-0-event-kbd
+  1 -continue-if-no-devs-found yes
+)
+  (defsrc
+    grv 1 2 3 4 5 6 7 8 9 0 - = bspc
+    tab q w e r t y u i o p [ ] caps a s d f g h j k l ; '     ret
+    lsft z x c v b n m , . / rsft
+    lctl lmet lalt spc ralt rmet rctl
+  )
+(defalias
+  lsw-base (layer-switch base)
+  lsw-extra (layer-switch extra)
+  lsw-tap (layer-switch tap)
+  lsw-button (layer-switch button)
+)
+(deflayer base q w f p b j l u y ' (tap-hold 200 200 a lmet) (tap-hold 200 200 r lalt) (tap-hold 200 200 s lctl) (tap-hold 200 200 t lsft) g m (tap-hold 200 200 n lsft) (tap-hold 200 200 e lctl) (tap-hold 200 200 i lalt) (tap-hold 200 200 o lmet) (tap-hold 200 200 z (layer-while-held button)) (tap-hold 200 200 x ralt) c d v k h , (tap-hold 200 200 . ralt) (tap-hold 200 200 / (layer-while-held button)) (tap-hold 200 200 escape (layer-while-held media)) (tap-hold 200 200 spc (layer-while-held nav)) (tap-hold 200 200 tab (layer-while-held mouse)) (tap-hold 200 200 ret (layer-while-held sym)) (tap-hold 200 200 bspc (layer-while-held num)) (tap-hold 200 200 del (layer-while-held fun)) ) (deflayer extra q w f p b j l u y ' (tap-hold 200 200 a lmet) (tap-hold 200 200 r lalt) (tap-hold 200 200 s lctl) (tap-hold 200 200 t lsft) g m (tap-hold 200 200 n lsft) (tap-hold 200 200 e lctl) (tap-hold 200 200 i lalt) (tap-hold 200 200 o lmet) (tap-hold 200 200 z (layer-while-held button)) (tap-hold 200 200 x ralt) c d v k h , (tap-hold 200 200 . ralt) (tap-hold 200 200 / (layer-while-held button)) (tap-hold 200 200 escape (layer-while-held media)) (tap-hold 200 200 spc (layer-while-held nav)) (tap-hold 200 200 tab (layer-while-held mouse)) (tap-hold 200 200 ret (layer-while-held sym)) (tap-hold 200 200 bspc (layer-while-held num)) (tap-hold 200 200 del (layer-while-held fun)) ) (deflayer tap q, w, f, p, b, j, l, u, y, ', a, r, s, t, g, m, n, e, i, o, z, x, c, d, v, k, h, ,, ., /, escape, spc, tab, ret, bspc, del ) (deflayer button C-z, C-x, C-c, C-v, C-y, C-y, C-v, C-c, C-x, C-z, lmet, lalt, lctl, lsft, _, _, lsft, lctl, lalt, lmet, C-z, C-x, C-c, C-v, C-y, C-y, C-v, C-c, C-x, C-z, (multi mmid), (multi mlft), (multi mrgt), (multi mrgt), (multi mlft), (multi mmid) ) (deflayer nav _, _, _, _, _, _, _, _, _, _, lmet, lalt, lctl, lsft, _, C-c, left, down, up, rght, _, ralt, _, _, _, _, home, pgdn, pgup, end, _, _, _, _, _, ret, bspc, del ) (deflayer mouse _, _, _, _, _, _, _, _, _, _, lmet, lalt, lctl, lsft, _, _, (movemouse-left 1 10), (movemouse-down 1 10), (movemouse-up 1 10), (movemouse-right 1 10), _, ralt, _, _, _, _, (mwheel-left 50 120), (mwheel-down 50 120), (mwheel-up 50 120), (mwheel-right 50 120), _, _, _, _, _, (multi mrgt), (multi mlft), (multi mmid) ) (deflayer media _, _, _, _, _, _, _, _, _, _, lmet, lalt, lctl, lsft, _, _, prev, vold, volu, next, _, ralt, _, _, _, _, _, _, _, _, _, _, _, _, _, mstp, play, mute ) (deflayer num [, 7, 8, 9, ], _, _, _, _, _, ;, 4, 5, 6, =, _, lsft, lctl, lalt, lmet, `, 1, 2, 3, \\, _, ralt, _, _, _, ., 0, -, _, _, _ ) (deflayer sym _, _, _, _, _, {, &, *, (, }, _, lsft, lctl, lalt, lmet, +, $, %, ^, :, _, ralt, _, _, _, |, !, @, #, ~, _, _, _, _, _, ), \_ ) (deflayer fun f12, f7, f8, f9, _, _, _, _, _, _, f11, f4, f5, f6, _, _, lsft, lctl, lalt, lmet, f10, f1, f2, f3, _, _, ralt, _, _, _, _, spc, tab, _, _, _ )
